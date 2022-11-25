@@ -74,6 +74,11 @@ function display(){
         <td>${experimentlist[i].pcategory}</td>
         <td>${experimentlist[i].pprice}</td>
         <td>${experimentlist[i].pdescription}</td>
+            <td>
+            <button class="btn btn-danger"  onclick="deleteproduct(${i})">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+            </td>
       </tr>`
 
       //console.log(trs);
@@ -81,6 +86,16 @@ function display(){
 
 
     }
+}
+
+function deleteproduct(index){
+
+    alert("Confirm Delete");
+
+    experimentlist.splice(index,1)
+
+    display();
+
 }
 
 /*
