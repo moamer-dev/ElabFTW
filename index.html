@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+</head>
+
+<body>
+   <h1 id="demo"></h1>
+
+   <div class="m-auto w-50 shadow p-30 ">
+
+    <div class="mb-3 mt-20">
+      <h1>Elab</h1>
+      <label for="exp-name" class="form-label">Experiment Name</label>
+      <input type="text" name = "disbleinputs" class="form-control disbleinputs" id="exp-name" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exp-id" class="form-label">Experiment ID</label>
+      <input type="text" name = "disbleinputs" class="form-control disbleinputs" id="exp-id">
+    </div>
+    <div class="mb-3">
+        <label for="exp-materials" class="form-label">Materials</label>
+        <input type="text" name = "disbleinputs" class="form-control disbleinputs" id="exp-materials">
+    </div>
+    <div class="mb-3">
+        <label for="exp-sample" class="form-label">Sample Property</label>
+        <textarea class="form-control disbleinputs" name = "disbleinputs" id="exp-sample"></textarea>
+    </div>
+    <div class="mb-3">
+    <button onclick="createexpriment();" type="button" disabled class="btn btn-primary" id="addbutton">Add Experiment</button>
+    <button onclick="display();" type="button" class="btn btn-primary">Clear</button>
+    <button onclick="Convert();" type="button" class="btn btn-primary" id="jsonconvert">Convert to JSON</button>
+    <button onclick="disable();" type="button" class="btn btn-primary" id="smwbutton">Push to SMW</button>
+    <button onclick="enable();" type="button" class="btn btn-primary" id="enablebutton">Unlock</button>  
+  </div>
+    <div class="mb-3 m-auto">
+      <input onkeyup="search();" type="text" class="form-control" id="search" placeholder="Search...">
+      </div>
+
+      <div class="mb-3 m-auto">
+        <table class="table table-striped text-center" id="experimenttable">
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col"> Experiment Name </th>
+              <th scope="col">ID</th>
+              <th scope="col">Materials</th>
+              <th scope="col">Sample Property</th>
+            </tr>
+          <tbody id="table-rows">
+           
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mb-3 m-auto" id="jsoncontainer">
+    
+      </div>
+
+   </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
