@@ -1,0 +1,26 @@
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #6a765c !important;
+}
+
+.carousel {
+    position: relative;
+    width: 50% ;
+    margin: auto ;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.font-weight-bold{
+  font-weight: 700;  
+}
+
+.text-capitalize{
+    text-transform: uppercase;
+}
