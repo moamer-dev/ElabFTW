@@ -48,9 +48,6 @@ function createexpriment() {
     experimentlist.push(product)
 
     //addtolocalstorage()
-    
-
-    console.log(experimentlist)
 
     display();
     
@@ -85,16 +82,7 @@ function display(){
 
     }
 }
-/*
-function deleteproduct(index){
 
-    alert("Confirm Delete");
-
-    experimentlist.splice(index,1)
-
-    display();
-
-}*/
 /*
 function addtolocalstorage(){
 
